@@ -1,0 +1,42 @@
+{
+  "name": "helpbot",
+  "normalizedName": "HelpBot",
+  "version": "22.01",
+  "description": "I'm a bot designed for automated community moderation, music reproduction, leveling, and much more!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-warnings index.js",
+    "devStart": "NODE_ENV=development nodemon --no-warnings index.js",
+    "debug": "nodemon --trace-warnings index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EasyXploit/HelpBot.git"
+  },
+  "keywords": [
+    "discord-bot",
+    "discord.js"
+  ],
+  "author": "Daniel Perales Mauriz",
+  "license": "MIT",
+  "homepage": "https://github.com/EasyXploit/HelpBot#readme",
+  "dependencies": {
+    "@sentry/node": "^7.29.0",
+    "@sentry/tracing": "^7.29.0",
+    "asciiart-logo": "^0.2.7",
+    "bufferutil": "^4.0.6",
+    "discord.js": "^13.9.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "nanoid": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "databases/*",
+      "configs/dynamic.json"
+    ]
+  }
+}
